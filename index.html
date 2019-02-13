@@ -1,15 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="utf-8">
+  <title>SINGLE PAGE WEB APP TEMPLATE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Get started with HTML, CSS and JavaScript">
+  <meta name="author" content="Rasmus Cederdorff">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="javascript" href="js/main.js">
-  <title>Cinema Squid</title>
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 </head>
+
 <body>
-  <header>hhhhhh</header>
-  <footer></footer>
+  <!-- tabbar navigation -->
+  <nav class="tabbar">
+    <a href="#home" onclick="showPage('home')">Home</a>
+    <a href="#family" onclick="showPage('family')">My family</a>
+    <a href="#teachers" onclick="showPage('teachers')">Teachers</a>
+    <a href="#contact" onclick="showPage('contact')">Contact</a>
+  </nav>
+
+  <!-- pages -->
+  <!-- home page -->
+   <div class="container">
+
+    <img id="front-img" src="img/films.jpg" style="width: 100%;">
+    <img id="logo" src="img/images.png">    
+    <p>GET TO THE MOVIES<br>*ARGH*</p>
+    </div>
+    
+  <section id="home" class="page">
+   
+  </section>
+
+  <!-- about page -->
+  <section id="family" class="page">
+    <header class="topbar">
+      <h2>My family</h2>
+    </header>
+    <section id="my-family"></section>
+  </section>
+
+  <!-- teachers page -->
+  <section id="teachers" class="page">
+    <header class="topbar">
+      <h2>Teachers</h2>
+    </header>
+    <section id="my-teachers"></section>
+  </section>
+
+  <!-- contact page -->
+  <section id="contact" class="page">
+    <header class="topbar">
+      <h2>Contact</h2>
+    </header>
+    <p>So, contact info?</p>
+    <p><a href="mailto:race@eaaa.dk">race@eaaa.dk</a></p>
+    <a href="http://cederdorff.com" target="_blank">
+      <img src="img/logo.png" alt="Cederdorff logo" class="logo">
+    </a>
+  </section>
+
+  <!-- main js file -->
+  <script src="js/main.js"></script>
 </body>
+
 </html>
