@@ -2,16 +2,38 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Cinema Squid is Awesome!</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Get started with HTML, CSS and JavaScript">
-    <meta name="author" content="Cinema Squid">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <title>Cinema Squid</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Cinema Squid">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 </head>
 
 <body>
+  <!-- pages -->
+  <!-- Home Page -->
+  <section id="home" class="page">
+    <header class="topbar">
+      <h2>Get to the Movies <br> Arghgh</h2>
+    </header>
+    <p>Some movies</p>
+    <div id="movies-dropdown"></div>
+    <button type="button" name="button" onclick="randomizeMovies()">RANDOMIZE</button>
+  </section>
 
+  <!-- Movie Page -->
+  <section id="result" class="page">
+    <header class="topbar">
+      <h2>Title</h2>
+    </header>
+    <section id="my-family"></section>
+  </section>
+
+
+  <!-- main js file -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>
