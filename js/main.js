@@ -44,7 +44,7 @@ setDefaultPage();
 // ---------- Fetch data from data sources ---------- //
 
 /*
-Fetches json data - cagtegories
+Fetches json data - categories
 */
 fetch('http://jdesigns.dk/wordpress/wp-json/wp/v2/categories')
   .then(function(response) {
@@ -82,6 +82,14 @@ function randomizeMovies() {
 
 }
 
+function getFeaturedImageUrl(post) {
+  let imageUrl = "";
+  if (post._embedded['wp:featuredmedia']) {
+    imageUrl = post._embedded['wp:featuredmedia'][0].source_url;
+  }
+  return imageUrl;
+}
+
 // get movies or post by given id
 function getMovies(id) {
   fetch("http://jdesigns.dk/wordpress/wp-json/wp/v2/posts?_embed&categories=" + id)
@@ -96,7 +104,7 @@ function getMovies(id) {
 function appendMovies(movies) {
   let htmlTemplate = "";
   for (let movie of movies) {
-    console.log();
+    console.log(movies);
     htmlTemplate += `
     <article>
       <img src="${getFeaturedImageUrl(movie)}">
@@ -105,11 +113,10 @@ function appendMovies(movies) {
     </article>
     `;
   }
-  document.querySelector("#result").innerHTML += htmlTemplate;
+  document.querySelector("#movies").innerHTML += htmlTemplate;
+  showPage("result");
 }
 
-// append movie funtionality
-function appendMovies(json) {
-  console.log(json);
+// append movie functionality
+
   // to do
-}
