@@ -81,6 +81,12 @@ function randomizeMovies() {
   getMovies(selectedCategory);
 }
 
+//click event function arrow
+function backButton() {
+  showPage("home");
+  console.log(backButton);
+}
+
 function getFeaturedImageUrl(post) {
   let imageUrl = "";
   if (post._embedded['wp:featuredmedia']) {
@@ -108,12 +114,13 @@ function appendMovies(movies) {
     console.log(movie);
     htmlTemplate += `
     <article>
-      <img src="${getFeaturedImageUrl(movie)}">
+      <img class="featuredimg" src="${getFeaturedImageUrl(movie)}">
       <h2>${movie.title.rendered}</h2>
+      <div class="line"></div>
       <p>${movie.content.rendered}</p>
     </article>
     `;
   }
-  document.querySelector("#movies").innerHTML += htmlTemplate;
+  document.querySelector("#movies").innerHTML = htmlTemplate;
   showPage("result");
 }

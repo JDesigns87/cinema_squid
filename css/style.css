@@ -52,7 +52,75 @@ figure {
 }
 
 img {
-  width: 50%;
+  width: 100%;
+}
+
+/* ---------- Movie Page ---------- */
+
+#arrow {
+  width: 7%;
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+
+.arrow img {
+  width: 100%;
+}
+
+.featuredimg {
+  width: 100%;
+}
+
+.featuredimg img {
+  width: 100%;
+}
+
+h2 {
+  margin: 3%;
+  margin-top: -35px;
+}
+
+p {
+  margin: 3%;
+  margin-top: 5%;
+  max-width: 400px;
+}
+
+h4 {
+  margin: 3%;
+  margin-top: 7%;
+}
+
+.line {
+  height: 1px;
+  width: 93%;
+  background-color: red;
+  margin-left: 3%;
+}
+
+footer {
+  width: 100%;
+  height: 150px;
+  background-color: #303030;
+  bottom: 0;
+  position: absolute;
+}
+
+.blobfooter {
+  width: 10%;
+  margin-left: 45%;
+  margin-top: 10%;
+}
+
+.blobfooter img {
+  width: 100%;
+}
+
+#result {
+  background-image: linear-gradient(#121212, #252525);
 }
 
 /* ---------- animations ---------- */
