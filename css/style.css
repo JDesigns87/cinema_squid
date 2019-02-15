@@ -1,11 +1,3 @@
-/* ---------- root variables ---------- */
-:root {
-  --green: rgb(38, 76, 89);
-  --light-green: rgb(172, 198, 201);
-  --text-color-light: #f1f1f1;
-  --text-color-dark: #333;
-}
-
 /* ---------- general styling ---------- */
 html {
   color: var(--text-color-dark);
@@ -14,7 +6,7 @@ html {
   width: 100%;
   margin: auto;
   font-weight: 200;
-  background-color: #171717;
+  background-color: #252525;
 }
 
 body {
@@ -49,6 +41,7 @@ h1 {
 figure {
   width: 20%;
   display: inline-block;
+  margin-bottom: 50%;
 }
 
 img {
@@ -58,12 +51,16 @@ img {
 /* ---------- Movie Page ---------- */
 
 #arrow {
-  width: 7%;
+  width: 40px;
   margin: 0 auto;
   padding: 0;
   position: absolute;
   top: 2%;
   left: 2%;
+}
+
+#arrow:hover {
+  cursor: pointer;
 }
 
 .arrow img {
@@ -76,47 +73,47 @@ img {
 
 .featuredimg img {
   width: 100%;
+  height: 700px;<
 }
 
 h2 {
-  margin: 3%;
+  margin-left: 20px;
   margin-top: -35px;
 }
 
-p {
-  margin: 3%;
-  margin-top: 5%;
+article p {
+  margin-left: 20px;
+  margin-top: 20px;
   max-width: 400px;
+  line-height: 22px;
 }
 
 h4 {
-  margin: 3%;
-  margin-top: 7%;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 .line {
   height: 1px;
-  width: 93%;
+  width: 90%;
   background-color: red;
-  margin-left: 3%;
+  margin-left: 20px;
 }
 
 footer {
   width: 100%;
   height: 150px;
   background-color: #303030;
-  bottom: 0;
-  position: absolute;
 }
 
 .blobfooter {
-  width: 10%;
+  width: 50px;
   margin-left: 45%;
-  margin-top: 10%;
+  margin-top: 50px;
 }
 
 .blobfooter img {
-  width: 100%;
+
 }
 
 #result {
