@@ -79,7 +79,6 @@ function randomizeMovies() {
   console.log(selectedCategory);
   // call getMovies with selectedCategory
   getMovies(selectedCategory);
-
 }
 
 function getFeaturedImageUrl(post) {
@@ -101,10 +100,12 @@ function getMovies(id) {
     });
 }
 
+// Random Key
+
 function appendMovies(movies) {
   let htmlTemplate = "";
-  for (let movie of movies) {
-    console.log(movies);
+  let movie = movies[Math.floor(Math.random()*movies.length)]; {
+    console.log(movie);
     htmlTemplate += `
     <article>
       <img src="${getFeaturedImageUrl(movie)}">
@@ -116,7 +117,3 @@ function appendMovies(movies) {
   document.querySelector("#movies").innerHTML += htmlTemplate;
   showPage("result");
 }
-
-// append movie functionality
-
-  // to do
