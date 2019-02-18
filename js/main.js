@@ -119,13 +119,16 @@ function appendMovies(movies) {
       <div class="line"></div>
       <p>${movie.content.rendered}</p>
     </article>
+    <footer>
+      <img class="blobfooter" src="img/blob.png" alt="blobfooter">
+    </footer>
     `;
   }
   document.querySelector("#movies").innerHTML = htmlTemplate;
   showPage("result");
 }
 
-//scroll wheel skal implementeres ordenligt
+/*//scroll wheel skal implementeres ordenligt
 instance = movies-dropdown.scroller('#demo', {
     rows: 10,
     wheels: [
@@ -166,3 +169,4 @@ instance = movies-dropdown.scroller('#demo', {
         return [1990, 2010];
     }
 });
+*/
