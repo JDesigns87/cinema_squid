@@ -124,3 +124,45 @@ function appendMovies(movies) {
   document.querySelector("#movies").innerHTML = htmlTemplate;
   showPage("result");
 }
+
+//scroll wheel skal implementeres ordenligt
+instance = movies-dropdown.scroller('#demo', {
+    rows: 10,
+    wheels: [
+        [{
+            circular: false,
+            data: fromValues,
+            label: 'From'
+        },
+      ]
+    ],
+    showLabel: true,
+    minWidth: 130,
+    cssClass: 'md-daterange',
+    validate: function (event, inst) {
+        var i,
+            values = event.values,
+            disabledValues = [];
+
+        for (i = 0; i < toValues.length; ++i) {
+            if (toValues[i] <= values[0]) {
+                disabledValues.push(toValues[i]);
+            }
+        }
+
+        return {
+            disabled: [
+                [], disabledValues
+            ]
+        }
+    },
+    formatValue: function (data) {
+        return data[0] + ' - ' + data[1];
+    },
+    parseValue: function (valueText) {
+        if (valueText) {
+            return valueText.replace(/\s/gi, '').split('-');
+        }
+        return [1990, 2010];
+    }
+});
