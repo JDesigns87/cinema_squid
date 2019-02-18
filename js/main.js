@@ -117,7 +117,10 @@ function appendMovies(movies) {
       <img class="featuredimg" src="${getFeaturedImageUrl(movie)}">
       <h2>${movie.title.rendered}</h2>
       <div class="line"></div>
-      <p>${movie.content.rendered}</p>
+      ${movie.content.rendered}
+      <h4 class="stream_title">${movie.acf.streaming}</h4>
+      <img src="${movie.acf.streaming_img}">
+      <img src="${movie.acf.streaming_img2}">
     </article>
     <footer>
       <img class="blobfooter" src="img/blob.png" alt="blobfooter">
