@@ -69,7 +69,7 @@ h2 {
   padding-left: 20px;
   margin-top: -35px;
   background-image: linear-gradient(rgba(18,18,18,0), rgba(18,18,18,1));
-  position: absolute;
+  position:absolute;
   width: 100%;
 }
 
