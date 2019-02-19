@@ -1,7 +1,7 @@
 /* ---------- general styling ---------- */
 html {
   color: var(--text-color-dark);
-  font-family: 'Varela', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   height: 100%;
   margin: auto;
   font-weight: 200;
@@ -22,6 +22,7 @@ h1 {
   font-weight: 300;
   letter-spacing: 3px;
   width: 100%;
+  margin-top: 55px;
 }
 
 /* ---------- page styling ---------- */
@@ -66,7 +67,7 @@ img {
   border-radius: 30px;
   border-style: none;
   color: #fff;
-  font-family: 'Varela', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 12px;
   outline: none;
@@ -83,6 +84,7 @@ img {
 
 h2 {
   padding-left: 20px;
+  font-family: 'Varela', sans-serif;
   margin-top: -35px;
   background-image: linear-gradient(rgba(30,30,30,0), rgba(30,30,30,1));
   position:absolute;
@@ -92,6 +94,18 @@ h2 {
 .header_img {
   height: 250px;
   object-fit: cover;
+}
+
+.blobheader {
+  width: 150px;
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  top: 90px;
+}
+
+.blobheader img {
+  width: 100%;
 }
 
 article p {
@@ -112,7 +126,7 @@ article img {
 select {
   width:50%;
   font-size: 20px;
-  font-family: 'Varela', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color:inherit;
   cursor: pointer;
   color: white;
@@ -148,9 +162,7 @@ footer {
   width: 50px;
   margin-left: 45%;
   margin-top: 40px;
-}
-
-.blobfooter img {
+  margin-right: auto;
 }
 
 .button {
@@ -161,7 +173,7 @@ footer {
   border-style: none;
   margin-top: 30px;
   color: #fff;
-  font-family: 'Varela', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 15px;
   cursor: pointer;
