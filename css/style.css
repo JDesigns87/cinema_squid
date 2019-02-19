@@ -20,7 +20,7 @@ body {
 h1 {
   font-size: 2em;
   letter-spacing: 3px;
-  margin-top: 55px;
+  margin-top: 25px;
   text-align: center;
   width: 100%;
 }
@@ -99,14 +99,7 @@ h2 {
 
 .blobheader {
   width: 150px;
-  position: absolute;
-  left: 30%;
-  right: 30%;
-  top: 90px;
-}
-
-.blobheader img {
-  width: 100%;
+  margin-top: -170px;
 }
 
 article p {
@@ -114,6 +107,8 @@ article p {
   margin-bottom: 80px;
   max-width: 500px;
   padding-right: 20px;
+  line-height: 24px;
+  font-weight: 400;
 }
 
 article img {
@@ -211,4 +206,5 @@ article {
 
 #home {
   text-align: center;
+  width: 100%;
 }
