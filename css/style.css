@@ -28,7 +28,7 @@ h1 {
 /* ---------- page styling ---------- */
 .page {
   /*min heigh is screen heigh minus height of tab and top bar */
-  animation: fadeIn 0.4s;
+  animation: fadeIn 1.4s;
   /* padding equals height of tabbar and topbar */
 }
 
@@ -86,20 +86,22 @@ h2 {
   padding-left: 20px;
   font-family: 'Varela', sans-serif;
   margin-top: -35px;
-  background-image: linear-gradient(rgba(30,30,30,0), rgba(30,30,30,1));
-  position:absolute;
-  width: 94.5%;
   font-weight:lighter;
 }
 
 .header_img {
   height: 250px;
   object-fit: cover;
+  -webkit-mask-image: linear-gradient(black, transparent);
+  -moz-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient(black, transparent);
 }
 
 .blobheader {
-  width: 150px;
+  width: 100px;
   margin-top: -170px;
+  -webkit-mask-image: linear-gradient(black, black);
+  mask-image: linear-gradient(black, black);
 }
 
 article p {
@@ -114,9 +116,6 @@ article p {
 article img {
   display: inline-block;
   width: 90px;
-  margin-left: 20px;
-  margin-bottom: 50px;
-  margin-top: 15px;
 }
 
 select {
@@ -126,7 +125,7 @@ select {
   background-color:inherit;
   cursor: pointer;
   color: white;
-  border: none
+  border: solid;
 }
 
 select option {
@@ -197,6 +196,8 @@ footer {
 #movies .featuredimg {
   width: 100%;
   margin: 0;
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient(black, transparent);
 }
 
 article {
